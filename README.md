@@ -28,6 +28,11 @@ built using HTML, CSS and Vanilla JavaScript.
 
 ## 🚀 Run Locally
 
+Open the link below in your browser
+https://venkateshmaid01.github.io/arcade-mini-game/
+
+Or
+
 1. Clone this repository.
 2. Open the project folder.
 3. Open index.html in your browser.
@@ -39,12 +44,8 @@ locally using browser LocalStorage.
 
 ## 👨‍💻 Author
 
-Your Name
-
-## 📸 Screenshots
-
-Add project screenshots here.
+Venkatesh Vijay Maid
 
 ## 🌐 Live Demo
 
-Add your GitHub Pages link here.
+https://venkateshmaid01.github.io/arcade-mini-game/
