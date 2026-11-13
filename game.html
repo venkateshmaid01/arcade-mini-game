@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade mini Game</title>
+    <link href="game.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--  Main Page/DashBoard  -->
+    <div id="dashboard">
+        <div class="header">
+            <h1 class="title">ARCADE</h1>
+        </div>
+        <button class="menubtn">|||</button>
+
+        <!--                    menu                         -->
+        <div class="menu">
+            <div class="menuOption">
+                <button id="Profile" class="optBtn">Edit Profile</button>
+                    <button id="Progress" class="optBtn">Progress</button>
+            </div>
+            <button id="reset">Log out</button>
+        </div>
+
+        <div class="progBar">
+            <div class="progBox">
+                <label for="myscore">Score</label>
+                <input type="text" readonly name="myscore" id="myScore" class="playinfo" value="0">
+            </div>
+            <div class="progBox">
+                <label for="mygames">Total games</label>
+                <input type="text" readonly name="mygames" id="myGames" class="playinfo" value="0">
+            </div>
+            <div class="progBox">
+                <label for="mywins">Games Won</label>
+                <input type="text" readonly name="mywins" id="myWins" class="playinfo" value="0">
+            </div>
+        </div>
+        <div class="option">
+            <div id="G1" class="op">
+                <button id="play1" class="button">
+                    <p class="Gname">Tic Tac Toe</p>
+                    <img src="assets/TTT.png" class="images"
+                        alt="Tic Tac Toe Image, The image contains a grey Cat wearing a yellow hat playing Tic Tac Toe">
+                </button>
+            </div>
+            <div id="G2" class="op">
+                <button id="play2" class="button">
+                    <p class="Gname">Stone Paper Scissor</p>
+                    <img src="assets/st-pp-ss.png" class="images"
+                        alt="Stone Paper Scissor Image, the image contains three hand gestures Stone Paper And Scissor">
+                </button>
+            </div>
+            <div id="G3" class="op">
+                <button id="play3" class="button">
+                    <p class="Gname">Whack A Mole</p>
+                    <img src="assets/Whack.png" class="images"
+                        alt="Whack A Mole Image, the image contains a mole with sun glasses popped out of a hole ">
+                </button>
+            </div>
+            <div id="G4" class="op">
+                <button id="play4" class="button">
+                    <p class="Gname">Simon Says</p>
+                    <img src="assets/simon-says.png" class="images"
+                        alt="Simon Says Image, the image contains a circle with 4 different colors and a simon says title over it">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--                   POP UPS                     -->
+    <div id="popResult" class="popMsg">
+    </div>
+    <div id="alertmsg" class="popMsg">
+        <p>Are you sure, Delete the Progress?</p>
+        <button id="yReset" class="alertbtn">Yes</button>
+        <button id="nReset" class="alertbtn">Cancel</button>
+    </div>
+    <!--                menu option pages                 -->
+    <div id="profilePage">
+        <div class="header">
+            <h1 class="title">Profile</h1>
+        </div>
+        <input type="button" id="back5" value="Back" class="back">
+        <div class="navbar">
+            <div class="nav">
+                <label for="uname" class="infoLabel">Username:</label>
+                <input type="text" name="uname" id="uname" class="inpInfo">
+            </div>
+            <div class="nav">
+                <label for="uage" class="infoLabel">User Age :</label>
+                <input type="text" name="uage" id="uage" min="1" max="100" 
+                class="inpInfo" placeholder="Enter Age">
+            </div>
+            <button id="updInfo">Update</button>
+        </div>
+    </div>
+    <div id="playerProgress">
+        <div class="header">
+            <h1 class="title">Your Progress</h1>
+        </div>
+        <input type="button" id="back6" value="Back" class="back">
+        <div class="progMain">
+            <h3>User Info</h3>
+            <div class="progParts">
+                <div><label for="usName">Username:</label>
+                <input type="text" readonly class="progUnits" id="uname2" name="usName"></div>
+                <div><label for="usAge">Age:</label>
+                <input type="text" readonly class="progUnits" id="uage2" name="usAge"></div>
+            </div>
+            <h3> Overall Progress</h3>
+            <div class="progParts">
+                <div><label for="Tgames">Total Games:</label>
+                <input type="text" readonly class="progUnits" id="Tgames" name="Tgames"></div>
+                <div><label for="TScore">Score:</label>
+                <input type="text" readonly class="progUnits" id="TScore" name="TScore"></div>
+                <div><label for="TWins">Wins:</label>
+                <input type="text" readonly class="progUnits" id="TWins" name="TWins"></div>
+            </div>
+            <h3>Tic Tac Toe</h3>
+            <div class="progParts">
+                <div><label for="TTTtotal">Total Games:</label>
+                <input type="text" readonly class="progUnits" id="TTTtotal" name="TTTtotal"></div>
+                <div><label for="TTTWins">Wins:</label>
+                <input type="text" readonly class="progUnits" id="TTTWins" name="TTTWins"></div>
+                <div><label for="TTTloss">Losses:</label>
+                <input type="text" readonly class="progUnits" id="TTTloss" name="TTTloss"></div>
+                <div><label for="TTTdraw">Draws:</label>
+                <input type="text" readonly class="progUnits" id="TTTdraw" name="TTTdraw"></div>
+            </div>
+            <h3>Stone Paper Scissor</h3>
+            <div class="progParts">
+                <div><label for="SPStotal">Total Games:</label>
+                <input type="text" readonly class="progUnits" id="SPStotal" name="SPStotal"></div>
+                <div><label for="SPSWins">Wins:</label>
+                <input type="text" readonly class="progUnits" id="SPSWins" name="SPSWins"></div>
+                <div><label for="SPSloss">Losses:</label>
+                <input type="text" readonly class="progUnits" id="SPSloss" name="SPSloss"></div>
+                <div><label for="SPSdraw">Draws:</label>
+                <input type="text" readonly class="progUnits" id="SPSdraw" name="SPSdraw"></div>
+            </div>
+            <h3>Whack A Mole</h3>
+            <div class="progParts">
+                <div><label for="WAMtotal">Total Games:</label>
+                <input type="text" readonly class="progUnits" id="WAMtotal" name="WAMtotal"></div>
+                <div><label for="WAMhigh">High Score:</label>
+                <input type="text" readonly class="progUnits" id="WAMhigh" name="WAMhigh"></div>
+                <div><label for="WAMwins">Wins:</label>
+                <input type="text" readonly class="progUnits" id="WAMwins" name="WAMwins"></div>
+            </div>
+            <h3>Simon Says</h3>
+            <div class="progParts">
+                <div><label for="SStotal">Total Games:</label>
+                <input type="text" readonly class="progUnits" id="SStotal" name="SStotal"></div>
+                <div><label for="SSHigh">High Score:</label>
+                <input type="text" readonly class="progUnits" id="SSHigh" name="SSHigh"></div>
+                <div><label for="SSround">Highest Round:</label>
+                <input type="text" readonly class="progUnits" id="SSround" name="SSround"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--                 Game Pages                      -->
+
+    <!--  Tic Tac Toe  -->
+    <div id="TTT">
+        <div class="header">
+            <h1 class="title">Tic-Tac-Toe</h1>
+        </div>
+        <input type="button" id="back1" value="Back" class="back">
+        <div class="chooseXO">
+            <button id="Xplayer" class="XOsel">X</button>
+            <button id="Oplayer" class="XOsel">O</button>
+        </div>
+        <div class="main">
+            <div class="scoreBar">
+                <label for="tttscore">Wins: </label>
+                <input type="text" value="0" id="tttScore" name="tttscore" readonly class="changeScore">
+            </div>
+            <div class="TTTBlock">
+                <button id="ip1" value=" " class="XO"></button>
+                <button id="ip2" value=" " class="XO"></button>
+                <button id="ip3" value=" " class="XO"></button>
+                <button id="ip4" value=" " class="XO"></button>
+                <button id="ip5" value=" " class="XO"></button>
+                <button id="ip6" value=" " class="XO"></button>
+                <button id="ip7" value=" " class="XO"></button>
+                <button id="ip8" value=" " class="XO"></button>
+                <button id="ip9" value=" " class="XO"></button>
+            </div>
+        </div>
+        <button id="won"></button>
+    </div>
+
+    <!--  Stone Paper Scissor  -->
+    <div id="SPS">
+        <div class="header">
+            <h1 class="title">Stone-Paper-Scissor</h1>
+        </div>
+        <input type="button" id="back2" value="Back" class="back">
+        <button id="start">Start</button>
+        <div id="timer">
+            <label for="setTime">Time: </label>
+            <input type="number" name="setTime" value="0" readonly id="SetTime">
+        </div>
+        <div>
+            <div id="SPSMain">
+                <div class="gameblock">
+                    <div id="player">✊</div>
+                    <div id="computer">✊</div>
+                </div>
+            </div>
+            <div class="SPSscores">
+                <div class="vs">
+                    <label for="Psc">Your Score: </label>
+                    <input type="number" name="Psc" value="0" readonly class="changeScore" id="Pscore">
+                </div>
+                <div class="vs">
+                    <label for="Csc">Bot's Score: </label>
+                    <input type="number" name="Csc" value="0" readonly class="changeScore" id="Cscore">
+                </div>
+            </div>
+            <div><button id="againSPS">Play Again</button></div>
+            <div id="chooseSPS">
+                <button id="Stone" class="SPSsel" data-choice="Stone" disabled>✊</button>
+                <button id="Paper" class="SPSsel" data-choice="Paper" disabled>✋</button>
+                <button id="Scissor" class="SPSsel" data-choice="Scissor" disabled>✌️</button>
+            </div>
+        </div>
+    </div>
+
+    <!--  Whack A Mole  -->
+    <div id="WAM">
+        <div class="header">
+            <h1 class="title">Whack a mole</h1>
+        </div>
+        <input type="button" id="back3" value="Back" class="back">
+        <div class="scoreBar">
+            <label for="WAMsc">Your Score is: </label>
+            <input type="number" name="WAMsc" value="0" readonly class="changeScore" id="WAMcount">
+        </div>
+        <div class="WAMboard">
+            <div class="Shovel">🪏</div>
+            <div class="holesWAM" data-holenum="1"></div>
+            <div class="holesWAM" data-holenum="2"></div>
+            <div class="holesWAM" data-holenum="3"></div>
+            <div class="holesWAM" data-holenum="4"></div>
+            <div class="holesWAM" data-holenum="5"></div>
+            <div class="holesWAM" data-holenum="6"></div>
+            <div class="holesWAM" data-holenum="7"></div>
+            <div class="holesWAM" data-holenum="8"></div>
+            <div class="holesWAM" data-holenum="9"></div>
+        </div>
+        <div>
+            <button id="strtWAM" class="btnWAM">Start</button>
+            <button id="stpWAM" class="btnWAM">Stop</button>
+        </div>
+    </div>
+
+    <!--  Simon Says  -->
+    <div id="SS">
+        <div class="header">
+            <h1 class="title">Simon says</h1>
+        </div>
+        <input type="button" id="back4" value="Back" class="back">
+        <div>
+            <div class="pblock">
+                <div>
+                    <label for="round">Round: </label>
+                    <input type="number" name="round" value="0" readonly class="changeScore" id="round">
+                </div>
+                <div>
+                    <label for="SSpoints">Points: </label>
+                    <input type="number" name="SSpoints" value="0" readonly class="changeScore" id="SSpoints">
+                </div>
+            </div>
+            <div class="mainSS">
+                <button class="sscolors" id="ssB1" data-clr="blue"></button>
+                <button class="sscolors" id="ssB2" data-clr="green"></button>
+                <button class="sscolors" id="ssB3" data-clr="red"></button>
+                <button class="sscolors" id="ssB4" data-clr="yellow"></button>
+            </div>
+            <button id="SSplay" class="ssbtns" data-purpose="start">play</button>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="storage.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,733 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(90deg, #130409,#31161f, #130409);
+}
+
+#dashboard {
+    display: block;
+}
+
+.menubtn{
+    left: 2vmin;
+    position: relative;
+    width: 7vmin;
+    height: 7vmin;
+    font-size: 4vmin;
+    border: 1px solid #9a1737;
+    border-radius: 1vmin;
+    background-color: #d715695a;
+    color: #ffffff;
+    margin: 1vmin;
+    transform: rotateZ(90deg);
+}
+
+.menu{
+    left: -45vh;
+    position: absolute;
+    color: #F5E9E7;
+    height: 70vh;
+    width:  40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #6f6f6f;
+    background-color: #130409bb;
+    border-radius: 1vh;
+    max-width: 90vw;
+}
+
+.menuSlide{
+    left:0;
+    animation: slide 1s 1;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(-30vh);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.menuOption{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.optBtn{
+    background-color: #1304095c;
+    color: #F5E9E7;
+    margin: 1vmin;
+    height: 5vh;
+    border-radius: 1vh;
+    border: 0px;
+}
+
+.optBtn:hover{
+    background-color: #C44550;
+    border: 1px solid #6f6f6f;
+}
+
+#reset{
+    font-size: 2.5vh;
+    background-color: #201f1f;
+    color: red;
+    width: 70%;
+    height: 8%;
+    border-radius: 10vh;
+    margin: 3vh;
+}
+
+#reset:hover{
+    background-color: rgb(42, 42, 42);
+}
+
+.images{
+    border-radius: 5vmin;
+    height: 70%;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 3vh;
+}
+
+.title {
+    width: 80vw;
+    font-style: italic;
+    border: 1px solid #F5E9E7;
+    border-radius: 5vh;
+    background-color: #8B2635;
+    margin: auto;
+    font-size: 8vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F5E9E7;
+}
+
+.progBar{
+    display: flex;
+    color: #E8A0A5;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-style: italic;
+}
+
+.playinfo{
+    background-color: #2d0c1100;
+    color: #F5E9E7;
+    border: #2d0c1100;
+    text-align: center;
+    width: 20vmax;
+    font-size: 10vmin;
+}
+
+.progBox{
+    background-color: #43111d;
+    text-align: center;
+    width: 20vmax;
+    border: 1px solid #ee9191;
+    margin: 1vmin;
+    border-radius: 2vmax;
+    max-height: min-content;
+}
+
+.option{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: flex-start;
+   width: 100%;
+}
+
+.op{
+   margin: 2vw; 
+   display: flex;
+   flex-direction: column;
+}
+
+.Gname{
+    font-style: italic;
+    color: #f7cee2;
+    font-size: 5vmin;
+    padding: 1vh;
+    text-align: center;
+    height: 20%;
+}
+
+.button{
+    color: #8B2635;
+    background-image: linear-gradient(0deg,#E5A1AA, #5B1F32 60%);
+    height: 60vmin;
+    width: 40vmin;
+    border-radius: 2.5vh;
+    border: 1px solid #F5E9E7;
+}
+
+.back{
+    background-color: #572226;
+    color: #F5E9E7;
+    height: 4vh;
+    width: 7vh;
+    border-radius: 1.5vh;
+    border: 1px solid #404040;
+}
+
+/*                      profile page                     */
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 80vmax;
+    max-width: 90vw;
+    margin: 10vmin;
+    align-items:center;
+    background-color: #13040980;
+    border-radius: 5vmin;
+}
+
+.nav{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: baseline;
+    margin: 5vmin;
+}
+
+.infoLabel{
+    font-size: 5vmin;
+    color: #F5E9E7;
+}
+
+.inpInfo{
+    color: #F5E9E7;
+    font-size: 5vmin;
+    height: 6vmin;
+    width: 50vmin;
+    background-color: #ffffff00;
+    border: 0px;
+    margin-left: 1vmin;
+}
+
+#updInfo{
+    display: none;
+    outline: 0.5px solid rgba(0, 0, 0, 0.44);
+    width: 30vmin;
+    height: 15vmin;
+    border-radius: 15vw;
+    background-color: #E8A0A5;
+    color: #2d0c11;
+    font-size: 4vmin;
+    margin: 10px auto 10px auto;
+    box-shadow: 0 5px 5px rgb(30, 30, 30);
+}
+
+/* Routing pages*/
+#TTT {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+#SPS {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+#SS {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+#WAM {
+    display: none;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+#profilePage{
+    display: none;
+}
+#playerProgress{
+    display: none;
+}
+
+/*                         POPUPS                        */
+.popMsg{
+    top: 10%;
+    justify-self: center;
+    position: absolute;
+    display: none;
+    border: 1px solid #8B2635;
+    width: 50vmin;
+    height: 30vmin;
+    border-radius: 3vmin;
+    background-color: #541f30e2;
+    color: #F5E9E7;
+   justify-content: center;
+   align-items: center;
+   font-size: 5vmin;
+   flex-wrap: wrap;
+}
+.pop1{
+    animation: resultpop 1s 1;
+}
+.hide1{
+    animation: resulthide 1s 1;
+}
+
+@keyframes resultpop {
+    0%{
+        transform: translateY(-100vmin);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes resulthide {
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-100vmin);
+    }
+}
+.alertbtn{
+    margin: auto;
+    width:12vmin;
+    height: 6vmin;
+    border-radius: 3vmin;
+    font-size: 3vmin;
+    background-color: #f7cee2;
+    border: 1px solid black;
+}
+
+/*                              progess Page                          */
+.progMain{
+    color: #F5E9E7;
+    background-color: #13040937;
+    border-radius: 5vmin;
+    width: 100vmin;
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 10vmin;
+    font-size: 4vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.progParts{
+    background-color: #1304093c;
+    border-radius: 5vmin;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 3vmin 0vmin 10vmin;
+}
+.progUnits{
+    font-size: 4vmin;
+    width: 50vmin;
+    background-color: #13040900;
+    color: #F5E9E7;
+    border: 0;
+}
+
+/*  ............................Tic Tac Toe............................  */
+
+.main{
+    display: none;
+}
+.chooseXO{
+    background-color: #8B2635;
+    display: flex;
+    margin: auto;
+    height: 30vmin;
+    width: 60vmin;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vmin;
+    box-shadow: 0 5px 0px #411219;
+}
+.XOsel{
+    font-size: 20vmin;
+    background-color:#F5E9E7;
+    margin: 2vmin;
+    height: 25vmin;
+    width: 25vmin;
+    border-radius: 5vmin;
+    border: 1px solid #E8A0A5;
+}
+#Xplayer{
+    color: rgb(87, 66, 78);
+}
+#Oplayer{
+    color: rgb(131, 99, 122);
+}
+.TTTBlock{
+    display: flex;
+    background-color: #8B2635;
+    height: 70vmin;
+    width: 70vmin;
+    margin:auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5vmin;
+}
+
+.XO{
+    font-size: 18vmin;
+    height: 22vmin;
+    width: 22vmin;
+    border: 1px solid black;
+    border-radius: 5vmin;
+}
+
+#won{
+    background-color: #C44550;
+    display: none;
+    margin: auto;
+    border-radius: 15vmin;
+    color:#F5E9E7;
+    width: 35vmin;
+    height: 20vmin;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vmin;
+}
+
+.scoreBar{
+    margin-bottom: 5vmin;
+    display: flex;
+    justify-content: center;
+    font-size: 7vmin;
+    color: aliceblue;
+}
+#tttScore{
+    font-size: 7vmin;
+    background-color: rgba(240, 248, 255, 0);
+    width: 15vmin;
+    border: 0px;
+}
+
+/* ......................... Stone Paper Scissor ......................... */
+
+#chooseSPS{
+    display: flex;
+    margin: auto;
+    height: 30vmin;
+    width: 90vmin;
+    justify-content: center;
+    align-items: center;
+}
+.SPSsel{
+    background-color: #E8A0A5;
+    font-size: 20vmin;
+    margin: 2vmin;
+    height: 25vmin;
+    width: 25vmin;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12vmin;
+    box-shadow: 0 5px 5px rgb(51, 51, 51);
+    outline: 1px solid #F5E9E7;
+}
+.gameblock{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#player{
+    transform: rotateZ(90deg) scaleX(-1);
+    font-size: 20vmin;
+    margin: 2vmin;
+    height: 25vmin;
+    width: 25vmin;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#computer{
+    transform: rotateZ(-90deg);
+    font-size: 20vmin;
+    margin: 2vmin;
+    height: 25vmin;
+    width: 25vmin;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.animatePlayer{
+    animation: AnimateShoot1 1s 3;
+}
+@keyframes AnimateShoot1 {
+    0%{
+        transform: rotateZ(90deg) scaleX(-1);
+    }
+    25%{
+        transform: rotateZ(60deg) scaleX(-1);
+    }
+    50%{
+        transform: rotateZ(120deg) scaleX(-1);
+    }
+    75%{
+        transform: rotateZ(90deg) scaleX(-1);
+    }
+}
+.animateComp{
+    animation: AnimateShoot2 1s 3;
+}
+@keyframes AnimateShoot2 {
+    0%{
+        transform: rotateZ(-90deg);
+    }
+    25%{
+        transform: rotateZ(-60deg);
+    }
+    50%{
+        transform: rotateZ(-120deg);
+    }
+    75%{
+        transform: rotateZ(-90deg);
+    }
+}
+.SPSscores{
+    margin: auto;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+#timer{
+    display: flex;
+    justify-content: center;
+    font-size: 7vmin;
+    color: aliceblue;
+}
+#againSPS{
+    display: none;
+    z-index: 999;
+    width: 20vw;
+    height: 10vw;
+    top: 50vh;
+    left: 40vw;
+    margin: auto;
+    border-radius: 15vw;
+    background-color: #F5E9E7;
+    color: #8B2635;
+    font-size: 3vw;
+    box-shadow: 0 5px 5px rgb(30, 30, 30);
+}
+#start{
+    display: block;
+    position: absolute;
+    z-index: 999;
+    width: 30vw;
+    height: 20vw;
+    top: 30vh;
+    left: 35vw;
+    border-radius: 15vw;
+    background-color: #270d0d8a;
+    color: aliceblue;
+    font-size: 8vmin;
+}
+#SetTime{
+    color: aliceblue;
+    font-size: 7vmin;
+    background-color: rgba(240, 248, 255, 0);
+    width: 15vmin;
+    border: 0px;
+}
+.vs{
+    font-size: 5vmin;
+    color: aliceblue;
+}
+.changeScore{
+    color: aliceblue;
+    font-size: 5vmin;
+    background-color: rgba(240, 248, 255, 0);
+    width: 15vmin;
+    border: 0px;
+}
+
+/* ............................ Whack A mole ............................ */
+
+#WAM >*{
+    pointer-events: all;
+}
+
+#mole{
+    position:absolute;
+    transform: translateY(0%);
+    animation: molPOP var(--time) ease;
+}
+
+@keyframes molPOP {
+    0%{
+        transform: translateY(100%);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+#WAMcount{
+    color: aliceblue;
+    font-size: 7vmin;
+    background-color: rgba(240, 248, 255, 0);
+    width: 15vmin;
+    border: 0px;
+}
+
+.holesWAM{
+    display: flex;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border: 2px solid black;
+    cursor: none;
+    background-color: rgba(0, 0, 0, 0.992);
+    transform: rotateX(45deg);
+    border-radius: 50%;
+    width: 22vmin;
+    display: flex;
+    align-items: baseline;
+    height: 22vmin;
+    font-size: 15vmin;
+    justify-content: center;
+}
+
+.WAMboard{
+    z-index: 10;
+    cursor: none;
+    display: flex;
+    margin: auto;
+    width: 80vmin;
+    height: 80vmin;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    pointer-events: none;
+    background-image: linear-gradient(0deg, rgba(221, 170, 170, 0.019)0%,rgba(255, 141, 141, 0.096)40%,rgba(250, 112, 112, 0.195)100%);
+}
+
+.btnWAM{
+    outline: 0.5px solid black;
+    display: block;
+    width: 50vmin;
+    height: 30vmin;
+    border-radius: 15vw;
+    background-color: #E8A0A5;
+    color: #2d0c11;
+    font-size: 8vmin;
+    margin: auto;
+    box-shadow: 0 5px 5px rgb(30, 30, 30);
+}
+
+#strtWAM{
+    display: block;
+}
+#stpWAM{
+    display: none;
+}
+
+.Shovel{
+    display: inline-block;
+    transform-origin: top right;
+    padding: 0%;
+    z-index: 99;
+    width: 8vmax;
+    height: 8vmax;
+    transform: rotateZ(90deg);
+    position: fixed;
+    font-size: 8vmax;
+    will-change:transform;
+    pointer-events: none;
+    cursor: none;
+}
+
+.shovelAtk{
+    animation: atkaction 0.2s ease ;
+}
+@keyframes atkaction {
+
+    0%{
+        transform: rotateZ(90deg);
+    }
+    50%{
+       transform: rotateZ(45deg);
+    }
+}
+
+/* ............................ Simon Says ............................ */
+
+.pblock{
+    color: #F5E9E7;
+    display: flex;
+    justify-content: space-around;
+    margin: 1vmax;
+    font-size: 5vmin;
+}
+.mainSS{
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    width: 95vw;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+.sscolors{
+    margin: 3vmin;
+    width: 40vmin;
+    height: 40vmin;
+    border-radius: 3vmin;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px ;
+}
+#ssB1{
+    background-color: blue;
+}
+#ssB2{
+    background-color: green;
+}
+#ssB3{
+    background-color: red;
+}
+#ssB4{
+    background-color: yellow;
+}
+.ssbtns{
+    outline: 0.5px solid black;
+    display: block;
+    width: 40vmin;
+    height: 20vmin;
+    border-radius: 15vw;
+    background-color: #E8A0A5;
+    color: #2d0c11;
+    font-size: 8vmin;
+    margin: 1vmax auto;
+    box-shadow: 0 5px 5px rgb(30, 30, 30);
+}
